@@ -1,0 +1,223 @@
+﻿/*=====================Animations===================*/
+@keyframes NavBarAnimation{
+    from {
+        color:white;
+    }
+    to {
+        color: #58c93a;
+    }
+}
+@keyframes contentButton{
+    from {
+        color: lightslategray;
+        border-color:lightslategrey;
+    }
+    to{
+        color:greenyellow;
+        border-color:greenyellow;
+    }
+}
+@keyframes footerSocial {
+    from {
+        color:black;
+    }
+    to{
+        color:blue;
+    }
+}
+@keyframes footerLogo{
+    from{
+        color:black;
+    }
+    to{
+        color:greenyellow;
+    } 
+}
+@keyframes headerLogo{
+    from{
+        color:white;
+    }
+    to{
+        color:greenyellow;
+    }
+}
+body
+{
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+.headerMain {
+    width: 100%;
+    background-color: #292929;
+    height:128px;
+}
+.headerImage{
+    width:45%;
+    float:left;
+}
+.headerLogo {
+    float:left;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    margin-left: 29.8%;
+    margin-top: 38px;
+    cursor:pointer;
+}
+    .headerLogo:hover {
+        float: left;
+        color: greenyellow;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 30px;
+        margin-left: 29.8%;
+        margin-top: 38px;
+        animation-name:headerLogo;
+        animation-duration:0.8s;
+    }
+.headerNavBar{
+    width:55%;
+    float:right;
+}
+.navbarItem {
+    float:left;
+    text-align:center;
+    height:95px;
+    width: 18.6%;
+    border-width:1px;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-color: #1d1d1d;
+    padding-top:33px;
+}
+.navbarText{
+    display:inline-block;
+    vertical-align:central;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:18px;
+    color:white;
+    cursor:pointer;
+}
+    .navbarText:hover {
+        cursor:pointer;
+        color: #58c93a;
+        display: inline-block;
+        vertical-align: central;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        animation-name: NavBarAnimation;
+        animation-duration: 0.8s;
+    }
+.contentMain{
+     display:inline-block;
+     text-align:center;
+     width:73%;
+
+}
+.content {
+    width: 100%;
+    height: 375px;
+    margin-top: 77px;
+}
+.contenImage{
+    float:left;
+    width:50%;
+}
+.contentPicture{
+    float:left;
+    width:45%;
+}
+.contentInfo{
+    float:right;
+    width:50%;
+}
+.contentHeader{
+    font-weight:bold;
+    font-size:25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:black;
+    text-align:left;
+    margin:0;
+}
+.contentMainText{
+    text-align:left;
+    font-size:17px;
+    color:darkslategrey;
+    margin-top:38px;
+}
+.contentButton{
+    margin-top:23px;
+    float:left;
+    width:185px;
+    height:40px;
+    background-color:white;
+    color:lightslategray;
+    border-style:solid;
+    border-color:lightslategray;
+    font-size:18px;
+    border-radius:25px;
+    cursor:pointer;
+}
+    .contentButton:hover {
+        border-color:greenyellow;
+        color:greenyellow;
+        margin-top: 23px;
+        float: left;
+        width: 185px;
+        height: 40px;
+        background-color: white;
+        border-style: solid;
+        font-size: 18px;
+        border-radius: 25px;
+        animation-name:contentButton;
+        animation-duration:0.7s;
+        cursor:pointer;
+    }
+#contentFooter{
+    width:100%;
+    margin-top:60px;
+    height:70px;
+}
+#contentPrevious{
+    margin: 26px 15px 0px 25px;
+    float:left;
+    color:gray;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:20px;
+}
+#contentNext {
+    margin: 26px 15px 0px 25px;
+    float: right;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.footerLogo{
+    margin:20px 0 20px 0;
+    text-align:center
+}
+.footerLogoText{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:44px;
+    color:black;
+}
+    .footerLogoText:hover {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 44px;
+        color: greenyellow;
+        animation-name:footerLogo;
+        animation-duration:1s;
+    }
+.Copyright{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:18px;
+    color:gray;
+}
+.FooterIcon{
+    color:black;
+}
+.FooterIcon:hover{
+    color:blue;
+    animation-name:footerSocial;
+    animation-duration:1s;
+}
